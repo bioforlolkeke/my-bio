@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  text-decoration: none;
+}
+body {
+  background: linear-gradient(black, rgb(91, 19, 19));
+  min-height: 100vh;
+}
+.bio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bio img {
+  border-radius: 50%;
+  width: 13%;
+  animation: lol 1s infinite;
+}
+.bio img:nth-child(1){
+  animation-delay: 1.4s;
+}
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: black;
+  text-shadow: 0 0 20px red;
+  gap: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+.box span {
+  animation: anim 3s infinite, ease;
+}
+.k {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+.l {
+  width: 25%;
+  height: 48vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(155, 0, 0);
+  color: white;
+  font-family: sans-serif;
+  row-gap: 20px;
+}
+.l button {
+  width: 300px;
+  height: 5vh;
+  color: white;
+  background: black;
+  border: 2px solid rgb(155, 0, 0);
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: inset 2px 2px 10px rgb(255, 0, 0),
+    inset -2px -2px 10px rgba(255, 255, 255, 0.576);
+}
+.l:hover {
+  background: white;
+  transition: 0.7s ease;
+  color: black;
+  border: 3px solid black;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px white;
+
+}
+.l:hover svg{
+  fill: black;
+  transform: translateY(-80px);
+  transition: 0.9s;
+}
+.l:hover button{
+  background: white;
+  border: 2px solid black;
+  color: black;
+  box-shadow: none;
+  transition: 0.7s;
+}
+.l:hover a{
+  color: black;
+}
+.box span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.box span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.box span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.box span:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.box span:nth-child(5) {
+  animation-delay: 1s;
+}
+.box span:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.box span:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+@keyframes anim {
+  0% {
+    color: red;
+  }
+  25% {
+    color: rgb(255, 98, 0);
+  }
+  50% {
+    color: rgb(255, 247, 0);
+  }
+  100% {
+    color: red;
+  }
+  75% {
+    color: rgb(255, 98, 0);
+  }
+}
+@keyframes lol{
+  0%{
+    box-shadow: 0 0 20px white;
+  }
+  50%{
+    box-shadow: 0 0 7px white;
+  }
+  100%{
+    box-shadow: 0 0 20px white;
+  }
+}
+.l button:active{
+  transform: scale(0.9);
+  transition: 0.1s ease;
+}
